@@ -1,0 +1,38 @@
+{
+  "competitors": {
+    "OpenAI": {
+      "url": "https://openai.com/blog",
+      "name": "OpenAI",
+      "selectors": {
+        "title": "h1, h2, .post-title, .article-title",
+        "content": ".post-content, .article-content, .blog-content, main",
+        "date": ".date, .post-date, time"
+      }
+    },
+    "Google AI": {
+      "url": "https://ai.googleblog.com",
+      "name": "Google AI",
+      "selectors": {
+        "title": "h1, h2, .post-title",
+        "content": ".post-content, .post-body",
+        "date": ".published"
+      }
+    },
+    "Microsoft AI": {
+      "url": "https://blogs.microsoft.com/ai",
+      "name": "Microsoft AI",
+      "selectors": {
+        "title": "h1, .entry-title",
+        "content": ".entry-content",
+        "date": ".entry-date"
+      }
+    }
+  },
+  "settings": {
+    "user_agent": "AI-Competitor-Tracker-Bot/1.0 (+https://github.com/nbauman13/ai-competitor-tracker)",
+    "request_delay": 2,
+    "timeout": 30,
+    "max_retries": 3,
+    "report_format": "markdown"
+  }
+}
